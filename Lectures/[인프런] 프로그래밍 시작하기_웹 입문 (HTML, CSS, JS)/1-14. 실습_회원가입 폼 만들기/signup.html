@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="회원가입, html" />
+    <title>회원가입</title>
+  </head>
+  <body>
+    <h1>회원가입</h1>
+    <hr />
+    <!-- input method 기본 값은 GET -->
+    <form action="signup.html" method="POST">
+      <fieldset>
+        <legend>계정 정보</legend>
+        <div>
+          <!-- id로 지정하면, 레이블 클릭 시 해당 input 창이 focus 됨 -->
+          <label for="id-account">아이디</label>
+          <input
+            type="text"
+            name="account"
+            id="id-account"
+            required="required"
+          />
+        </div>
+        <!-- id는 항상 유일한 값이어야 함 -->
+        <div>
+          <label for="id-password">비밀번호</label>
+          <input
+            type="password"
+            name="password"
+            id="id-password"
+            required="required"
+          />
+        </div>
+        <div>
+          <label for="id-password-confirm">비밀번호 확인</label>
+          <input
+            type="password"
+            name="password-confirm"
+            id="id-password-confirm"
+            required="required"
+          />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>프로필</legend>
+        <div>
+          <label for="id-name">이름</label>
+          <input type="text" name="name" id="id-name" required="required" />
+        </div>
+        <div>
+          <!-- 여러개의 input을 담당하는 label의 경우 for 값 생략. 넣어도 무방함. -->
+          <label>생년월일</label>
+          <!-- HTML5 부터는 input type으로 number 가능 -->
+          <input
+            type="number"
+            name="birth-year"
+            placeholder="년"
+            min="1900"
+            max="2020"
+            required="required"
+          />
+          <select name="birth-month" required="required">
+            <option value="month">월</option>
+            <option value="1">1월</option>
+            <option value="2">2월</option>
+            <option value="3">3월</option>
+            <option value="4">4월</option>
+            <option value="5">5월</option>
+            <option value="6">6월</option>
+            <option value="7">7월</option>
+            <option value="8">8월</option>
+            <option value="9">9월</option>
+            <option value="10">10월</option>
+            <option value="11">11월</option>
+            <option value="12">12월</option>
+          </select>
+          <input
+            type="number"
+            name="birth-day"
+            placeholder="일"
+            min="1"
+            max="31"
+            required="required"
+          />
+        </div>
+        <label>성별</label>
+        <!-- label을 추가하면, label과 연동되어 클릭 영역 넓어지는게 편리함 -->
+        <input
+          type="radio"
+          name="gender"
+          id="id-gender-male"
+          value="gender-male"
+          required="required"
+        />
+        <label for="id-gender-male">남성</label>
+        <input
+          type="radio"
+          name="gender"
+          value="gender-female"
+          id="id-gender-female"
+          required="required"
+        />
+        <label for="id-gender-female">여성</label>
+        <input
+          type="radio"
+          name="gender"
+          value="gender-etc"
+          id="id-gender-etc"
+          required="required"
+        />
+        <label for="id-gender-etc">기타</label>
+      </fieldset>
+      <div>
+        <input type="checkbox" name="agree" id="id-agree" required="required" />
+        <label for="id-agree"
+          >사이트 이용 약관과 개인정보 수집 방침에 동의합니다.</label
+        >
+      </div>
+      <!-- input submit 에서의 action 기본 값은 자기 자신 페이지임 -->
+      <input type="submit" value="가입하기" action="www.naver.com" />
+      <!-- input submit을 button 태그로 똑같이 대체 가능함. 이 방식을 권장하는게, 나중에 CSS 추가하기가 더 편함. -->
+      <button type="submit">가입하기</button>
+    </form>
+  </body>
+</html>
+
+<!-- GET 방식일 경우에는, URL 뒤에 사용자가 입력한 값들이 붙어서 서버로 전송됨 -->
+<!-- POST 방식일 경우에는, 서버로 전송되는 것을 네트워크 탭 header 에서 확인 가능 -->
+<!-- post일 경우에는 새로고침 눌러도 동일한 요청이 다시 전송되지 않음. 그래서 결제시스템이나 장바구니 기능에 쓰임. -->
