@@ -1,0 +1,41 @@
+/* 별표시를 하나만 쓰면 universal selector라고 해서 전체적으로 적용됨. 브라우저의 기본 디자인을 설정할 때 활용*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.cell {
+  /* inline은 크기를 우리가 조정할 수 없어서 inline-block으로 해줌  */
+  display: inline-block;
+  width: 30%;
+  margin: 0 1%;
+}
+
+.cell img {
+  width: 100%;
+}
+
+.row {
+  margin: 20px 0;
+  /* 텍스트가 아니더라도, 안의 내용물이면 가운데 정렬 됨. */
+  text-align: center;
+}
+
+header {
+  margin: 10px 5%;
+  padding: 20px 0;
+  /* 색상에서 똑같은 문자가 반복되는 경우는 앞의 3개만 써도 됨. */
+  /* black이라고 색상명을 직접 적어도 됨. 가독성은 좋을 수 있으나 원하는 색이 아닐 수 있음.*/
+  border-bottom: 1px solid #000;
+}
+
+header h1 {
+  font-size: 21px;
+  display: inline;
+}
+
+header span {
+  font-size: 14px;
+  font-weight: 800;
+  background-color: #f0f000;
+}
