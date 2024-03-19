@@ -1,0 +1,34 @@
+<script>
+  // 피보나치 수열
+  // 수열 n = 수열 n-2번째 + 수열 n-1번째
+  var n_2 = 1;
+  var n_1 = 1;
+  for (var i = 0; i < 100; i++) {
+    var n = n_2 + n_1;
+    console.log(n);
+    n_2 = n_1;
+    n_1 = n;
+  }
+
+  // while 문
+  n_2 = 1;
+  n_1 = 1;
+  var i = 0;
+  while (i < 100) {
+    var n = n_2 + n_1;
+    console.log(n);
+    n_2 = n_1;
+    n_1 = n;
+    i++;
+  }
+
+  // while 문 조건식을 이렇게 쓰면 조금 더 for문에 가깝게 작성 가능함
+  n_2 = 1;
+  n_1 = 1;
+  while (n_1 < 10000) {
+    var n = n_2 + n_1;
+    console.log(n);
+    n_2 = n_1;
+    n_1 = n;
+  }
+</script>
