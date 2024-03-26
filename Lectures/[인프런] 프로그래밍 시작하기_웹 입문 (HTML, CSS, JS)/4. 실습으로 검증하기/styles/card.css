@@ -175,10 +175,11 @@ article.card main .carousel > div {
 
 article.card main .carousel ul {
   width: 10000px;
+  display: flex;
 }
 
 article.card main .carousel ul > li {
-  display: inline-block;
+  flex-direction: column;
 }
 
 article.card main .carousel ul > li > img {
