@@ -3,9 +3,10 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 // import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import NotificationList from "./chapter6/NotificationList";
 // import Library from "./chapter3/Library";
 // import Clock from "./chapter4/Clock";
-import CommentList from "./chapter5/commentList";
+// import CommentList from "./chapter5/commentList";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -14,7 +15,8 @@ root.render(
     {/* <App /> */}
     {/* <Library /> */}
     {/* <Clock /> */}
-    <CommentList />
+    {/* <CommentList /> */}
+    <NotificationList />
   </React.StrictMode>
 );
 
