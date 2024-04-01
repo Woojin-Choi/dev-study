@@ -3,7 +3,8 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 // import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import Accommodate from "./chapter7/Accommodate";
+// import Accommodate from "./chapter7/Accommodate";
+import ConfirmButton from "./chapter8/ConfirmButton";
 // import NotificationList from "./chapter6/NotificationList";
 // import Library from "./chapter3/Library";
 // import Clock from "./chapter4/Clock";
@@ -18,7 +19,8 @@ root.render(
     {/* <Clock /> */}
     {/* <CommentList /> */}
     {/* <NotificationList /> */}
-    <Accommodate />
+    {/* <Accommodate /> */}
+    <ConfirmButton />
   </React.StrictMode>
 );
 
