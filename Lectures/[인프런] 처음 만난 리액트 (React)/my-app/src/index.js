@@ -3,8 +3,9 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 // import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import LandingPage from "./chapter9/LandingPage";
 // import Accommodate from "./chapter7/Accommodate";
-import ConfirmButton from "./chapter8/ConfirmButton";
+// import ConfirmButton from "./chapter8/ConfirmButton";
 // import NotificationList from "./chapter6/NotificationList";
 // import Library from "./chapter3/Library";
 // import Clock from "./chapter4/Clock";
@@ -20,7 +21,8 @@ root.render(
     {/* <CommentList /> */}
     {/* <NotificationList /> */}
     {/* <Accommodate /> */}
-    <ConfirmButton />
+    {/* <ConfirmButton /> */}
+    <LandingPage />
   </React.StrictMode>
 );
 
