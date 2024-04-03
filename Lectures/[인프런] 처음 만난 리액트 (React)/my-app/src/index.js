@@ -3,7 +3,8 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 // import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import AttendanceBook from "./chapter10/AttendanceBook";
+// import AttendanceBook from "./chapter10/AttendanceBook";
+import SignUp from "./chapter11/SignUp";
 // import LandingPage from "./chapter9/LandingPage";
 // import Accommodate from "./chapter7/Accommodate";
 // import ConfirmButton from "./chapter8/ConfirmButton";
@@ -24,7 +25,8 @@ root.render(
     {/* <Accommodate /> */}
     {/* <ConfirmButton /> */}
     {/* <LandingPage /> */}
-    <AttendanceBook />
+    {/* <AttendanceBook /> */}
+    <SignUp />
   </React.StrictMode>
 );
 
