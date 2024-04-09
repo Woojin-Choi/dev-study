@@ -3,7 +3,8 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 // import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import Calculator from "./chapter12/Calculator";
+import ProfileCard from "./chapter13/ProfileCard";
+// import Calculator from "./chapter12/Calculator";
 // import AttendanceBook from "./chapter10/AttendanceBook";
 // import SignUp from "./chapter11/SignUp";
 // import LandingPage from "./chapter9/LandingPage";
@@ -28,7 +29,8 @@ root.render(
     {/* <LandingPage /> */}
     {/* <AttendanceBook /> */}
     {/* <SignUp /> */}
-    <Calculator />
+    {/* <Calculator /> */}
+    <ProfileCard />
   </React.StrictMode>
 );
 
